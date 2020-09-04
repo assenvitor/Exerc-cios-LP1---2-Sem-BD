@@ -1,1 +1,1 @@
-# Exerc-cios-LP1---2-Sem-BD
+# Exercícios LP1 - 2º Semestre de Banco de Dados
