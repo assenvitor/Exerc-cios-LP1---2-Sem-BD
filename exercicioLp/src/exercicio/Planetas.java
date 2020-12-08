@@ -3,6 +3,7 @@ package exercicio;
 public class Planetas {
 
 	// Atributos
+	
 	private String nome;
 	private String distanciaSol;
 	private String temperatura;

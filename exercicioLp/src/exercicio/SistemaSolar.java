@@ -1,17 +1,16 @@
 package exercicio;
 
 import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.JTextField;
-import javax.swing.JLabel;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
 import javax.swing.JButton;
-import javax.swing.JTextPane;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.border.EmptyBorder;
 
 public class SistemaSolar extends JFrame {
 
@@ -52,8 +51,8 @@ public class SistemaSolar extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("Distância do Sol:");
-		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		lblNewLabel.setBounds(10, 140, 172, 14);
+		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		contentPane.add(lblNewLabel);
 		
 		textNome = new JTextField();
@@ -62,22 +61,24 @@ public class SistemaSolar extends JFrame {
 		textNome.setColumns(10);
 		
 		JLabel lblNewLabel_1 = new JLabel("Nome:");
-		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		lblNewLabel_1.setBounds(40, 44, 56, 14);
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		contentPane.add(lblNewLabel_1);
 		
 		textDistanciaSol = new JTextField();
 		textDistanciaSol.setBounds(153, 134, 125, 20);
+		textDistanciaSol.setEditable(false);
 		contentPane.add(textDistanciaSol);
 		textDistanciaSol.setColumns(10);
 		
 		lblNewLabel_3 = new JLabel("Temperatura:");
-		lblNewLabel_3.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		lblNewLabel_3.setBounds(10, 165, 178, 19);
+		lblNewLabel_3.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		contentPane.add(lblNewLabel_3);
 		
 		textTemperatura = new JTextField();
 		textTemperatura.setBounds(153, 166, 74, 20);
+		textTemperatura.setEditable(false);
 		contentPane.add(textTemperatura);
 		textTemperatura.setColumns(10);
 		
@@ -111,7 +112,7 @@ public class SistemaSolar extends JFrame {
 		//Fechar
 		
 		JButton btnFechar = new JButton("Fechar");
-		btnFechar.setBounds(335, 214, 89, 36);
+		btnFechar.setBounds(297, 214, 89, 36);
 		contentPane.add(btnFechar);
 				
 	
@@ -150,7 +151,7 @@ public class SistemaSolar extends JFrame {
 		planetas[6] = new Planetas("Urano", "2.880.990.000 Km","-200°C");
 		planetas[7] = new Planetas("Netuno", "4.504.300.000 Km","-218°C");
 		
-		// Informações
+	// Informações
 		
 		for (int i = 0; i < 9; i++) {
 			if (textNome.getText().equals(planetas[i].getNome())) {
